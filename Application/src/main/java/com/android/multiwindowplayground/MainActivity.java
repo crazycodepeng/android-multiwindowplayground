@@ -40,7 +40,7 @@ public class MainActivity extends LoggingActivity {
 
         View multiDisabledMessage = findViewById(R.id.warning_multiwindow_disabled);
         // Display an additional message if the app is not in multiwindow mode.
-        if (!inMultiWindow()) {
+        if (!isInMultiWindowMode()) {
             multiDisabledMessage.setVisibility(View.VISIBLE);
         } else {
             multiDisabledMessage.setVisibility(View.GONE);

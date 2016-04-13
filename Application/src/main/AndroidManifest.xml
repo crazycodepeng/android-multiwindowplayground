@@ -52,7 +52,8 @@
                 android:defaultHeight="500dp"
                 android:defaultWidth="750dp"
                 android:gravity="top|end"
-                android:minimalSize="500dp" />
+                android:minimalWidth="500dp"
+                android:minimalHeight="500dp" />
         </activity>
 
         <!-- In split-screen mode, this Activity is launched adjacent to another Activity. This is

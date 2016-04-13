@@ -103,10 +103,10 @@ public abstract class LoggingActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onMultiWindowChanged(boolean inMultiWindow) {
-        super.onMultiWindowChanged(inMultiWindow);
+    public void onMultiWindowModeChanged(boolean isInMultiWindowMode) {
+        super.onMultiWindowModeChanged(isInMultiWindowMode);
 
-        Log.d(mLogTag, "onMultiWindowChanged: " + inMultiWindow);
+        Log.d(mLogTag, "onMultiWindowModeChanged: " + isInMultiWindowMode);
     }
 
     // Logging and UI methods below.
