@@ -20,7 +20,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.0.0'
+        classpath 'com.android.tools.build:gradle:2.1.2'
     }
 }
 
@@ -33,13 +33,13 @@ allprojects {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'android-N'
-    buildToolsVersion '24.0.0 rc1'
+    compileSdkVersion 24
+    buildToolsVersion '23.0.3'
 
     defaultConfig {
         applicationId "com.android.multiwindowplayground"
-        minSdkVersion 'N'
-        targetSdkVersion 'N'
+        minSdkVersion 24
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -60,7 +60,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.0.0-alpha1'
-    androidTestCompile 'com.android.support:support-annotations:24.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:24.0.0-beta1'
+    androidTestCompile 'com.android.support:support-annotations:24.0.0-beta1'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
 }
