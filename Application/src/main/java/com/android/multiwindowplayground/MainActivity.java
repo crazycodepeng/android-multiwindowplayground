@@ -57,7 +57,7 @@ public class MainActivity extends LoggingActivity {
          * properties from the root activity would have been inherited (which was here marked as
          * resizable by default).
          *
-         * 这个活动在AndroidManifest中被标记为“unresizable”。
+         * 这个Activity在AndroidManifest中被标记为“unresizable”。
          * 我们需要在此处指定FLAG_ACTIVITY_NEW_TASK标志，将其启动到一个新的任务堆栈中，
          * 否则根本activity的属性将被继承（默认情况下，这里标记为可调整大小）。
         */
@@ -84,7 +84,7 @@ public class MainActivity extends LoggingActivity {
          *
          * 如果可能的话，开始这个activity邻近重点activity（即这个activity）。
          * 请注意，这个标志只是对系统的一个提示，可能会被忽略。
-         * 例如，如果活动在相同的任务中启动，它将在启动Intent的以前的activity之上启动。
+         * 例如，如果Activity在相同的任务中启动，它将在启动Intent的以前的activity之上启动。
          * 这就是为什么Intent.FLAG_ACTIVITY_NEW_TASK标志在这里是在意图中指定的 - 这将在一个新任务中启动这个activity。
          */
         Intent intent = new Intent(this, AdjacentActivity.class);
@@ -96,11 +96,11 @@ public class MainActivity extends LoggingActivity {
         Log.d(mLogTag, "** starting LaunchBoundsActivity");
 
         // Define the bounds in which the Activity will be launched into.
-        //定义活动将启动的范围。
+        //定义Activity将启动的范围。
         Rect bounds = new Rect(500, 300, 100, 0);
 
         // Set the bounds as an activity option.
-        //将边界设置为活动选项。
+        //将边界设置为Activity选项。
         ActivityOptions options = ActivityOptions.makeBasic();
         options.setLaunchBounds(bounds);
 
@@ -114,7 +114,7 @@ public class MainActivity extends LoggingActivity {
     public void onStartBasicActivity(View view) {
         Log.d(mLogTag, "** starting BasicActivity");
 
-        // 使用“singleTask”启动模式中的默认选项启动活动
+        // 使用“singleTask”启动模式中的默认选项启动Activity
         // the AndroidManifest.xml.
         startActivity(new Intent(this, BasicActivity.class));
 
