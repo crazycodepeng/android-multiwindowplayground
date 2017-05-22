@@ -25,7 +25,10 @@
         android:theme="@style/MultiWindowSampleTheme">
         <!-- The launcher Activity that is started when the application is first started.
          Note that we are setting the task affinity to "" to ensure each activity is launched
-         into a separate task stack. -->
+         into a separate task stack.
+
+          应用程序第一次启动时启动的启动器活动。 请注意，我们正在将任务关联设置为“”，以确保将每个活动启动到单独的任务堆栈中。
+          -->
         <activity
             android:name="com.android.multiwindowplayground.MainActivity"
             android:taskAffinity="">
@@ -35,7 +38,7 @@
             </intent-filter>
         </activity>
 
-        <!-- This Activity cannot be resized and is always displayed full screen. -->
+        <!-- 此活动无法调整大小，并始终以全屏显示. -->
         <activity
             android:name="com.android.multiwindowplayground.activities.UnresizableActivity"
             android:resizeableActivity="false"
@@ -43,39 +46,47 @@
 
         <!-- This Activity has a default size (750x500dp) with a minimum size
         (500dp at its shortest side). It is launched in the top/end (top/right) corner by default.
-         These attributes are defined in the 'layout' tag within an Activity definition. -->
+         These attributes are defined in the 'layout' tag within an Activity definition.
+
+         此活动具有默认大小（750x500dp），最小尺寸（最短边为500dp）。
+         默认情况下，它在顶部/末端（上/右）角落启动。 这些属性在“活动”定义中的“布局”标签中定义。-->
         <activity
             android:name="com.android.multiwindowplayground.activities.MinimumSizeActivity"
             android:launchMode="singleInstance"
             android:taskAffinity="">
             <layout
-                android:defaultHeight="500dp"
-                android:defaultWidth="750dp"
+                android:defaultHeight="100dp"
+                android:defaultWidth="150dp"
                 android:gravity="top|end"
-                android:minWidth="500dp"
-                android:minHeight="500dp" />
+                android:minWidth="100dp"
+                android:minHeight="100dp" />
         </activity>
 
         <!-- In split-screen mode, this Activity is launched adjacent to another Activity. This is
-          controlled via a flag set in the intent that launches this Activity. -->
+          controlled via a flag set in the intent that launches this Activity.
+          在拆分屏幕模式下，此活动将在另一个活动附近启动。 这是通过在启动此活动的意图中设置的标志来控制的。-->
         <activity
             android:name="com.android.multiwindowplayground.activities.AdjacentActivity"
             android:taskAffinity="" />
 
-        <!-- This Activity is launched within an area defined in its launch intent. -->
+        <!-- This Activity is launched within an area defined in its launch intent.
+         此活动在其启动意图中定义的区域内启动。
+         -->
         <activity
             android:name="com.android.multiwindowplayground.activities.LaunchBoundsActivity"
             android:taskAffinity="" />
 
         <!-- This activity handles all configuration changes itself.
-        Callbacks for configuration changes are received in 'onConfigurationChanged'. -->
+        Callbacks for configuration changes are received in 'onConfigurationChanged'.
+         此活动本身处理所有配置更改。 在“onConfigurationChanged”中接收到用于配置更改的回调。-->
         <activity
             android:name="com.android.multiwindowplayground.activities.CustomConfigurationChangeActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
             android:launchMode="singleInstance"
             android:taskAffinity="" />
 
-        <!-- This Activity is launched in a new task without any special flags or settings. -->
+        <!-- This Activity is launched in a new task without any special flags or settings.
+         此活动在新任务中启动，无任何特殊标志或设置。-->
         <activity
             android:name="com.android.multiwindowplayground.activities.BasicActivity"
             android:launchMode="singleInstance"

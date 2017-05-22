@@ -22,6 +22,8 @@ import android.widget.TextView;
 
 /**
  * Simple TextView which is used to output log data received through the LogNode interface.
+ *
+ * Simple TextView，用于输出通过LogNode接口接收的日志数据。
  */
 public class LogView extends TextView implements LogNode {
 
@@ -39,6 +41,7 @@ public class LogView extends TextView implements LogNode {
 
     /**
      * Formats the log data and prints it out to the LogView.
+     *
      *
      * @param priority Log level of the data being logged.  Verbose, Error, etc.
      * @param tag      Tag for for the log data.  Can be used to organize log statements.

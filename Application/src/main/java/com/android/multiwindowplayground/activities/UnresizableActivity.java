@@ -16,15 +16,17 @@
 
 package com.android.multiwindowplayground.activities;
 
-import com.android.multiwindowplayground.R;
-
 import android.os.Bundle;
 import android.view.View;
+
+import com.android.multiwindowplayground.R;
 
 /**
  * This Activity is defined as unresizable in the AndroidManifest.
  * This means that this activity is always launched full screen and will not be resized by the
  * system.
+ *
+ * 此活动在AndroidManifest中被定义为无法定义(也就是禁用分屏)。 这意味着此活动始终全屏启动，系统不会调整大小。
  *
  * @see com.android.multiwindowplayground.MainActivity#onStartUnresizableClick(View)
  */

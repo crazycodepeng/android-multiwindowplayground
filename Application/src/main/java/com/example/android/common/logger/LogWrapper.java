@@ -20,6 +20,8 @@ import android.util.Log;
 /**
  * Helper class which wraps Android's native Log utility in the Logger interface.  This way
  * normal DDMS output can be one of the many targets receiving and outputting logs simultaneously.
+ *
+ * 助手类，它将Android的原生Log实用程序包装在Logger界面中。 这样，正常的DDMS输出可以是同时接收和输出日志的许多目标之一。
  */
 public class LogWrapper implements LogNode {
 

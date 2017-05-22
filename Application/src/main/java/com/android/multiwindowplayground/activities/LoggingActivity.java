@@ -16,12 +16,6 @@
 
 package com.android.multiwindowplayground.activities;
 
-import com.android.multiwindowplayground.R;
-import com.example.android.common.logger.Log;
-import com.example.android.common.logger.LogFragment;
-import com.example.android.common.logger.LogWrapper;
-import com.example.android.common.logger.MessageOnlyLogFilter;
-
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -31,10 +25,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.android.multiwindowplayground.R;
+import com.example.android.common.logger.Log;
+import com.example.android.common.logger.LogFragment;
+import com.example.android.common.logger.LogWrapper;
+import com.example.android.common.logger.MessageOnlyLogFilter;
+
 /**
  * Activity that logs all key lifecycle callbacks to {@link Log}.
  * Output is also logged to the UI into a {@link LogFragment} through {@link #initializeLogging()}
  * and {@link #stopLogging()}.
+ *
+ * 将所有关键生命周期回调记录到{@link Log}的活动。
+ * 输出也通过{@link #initializeLogging（）}和{@link #stopLogging（）}记录到{@link LogFragment}中。
  */
 public abstract class LoggingActivity extends AppCompatActivity {
 

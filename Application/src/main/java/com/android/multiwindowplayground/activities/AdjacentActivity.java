@@ -16,13 +16,13 @@
 
 package com.android.multiwindowplayground.activities;
 
-import com.android.multiwindowplayground.R;
-
 import android.os.Bundle;
 import android.view.View;
 
+import com.android.multiwindowplayground.R;
+
 /**
- * This Activity is to be launched adjacent to another Activity using the {@link
+ * 这个Activity是给其他Activity启动使用的 {@link
  * android.content.Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT}.
  *
  * @see com.android.multiwindowplayground.MainActivity#onStartAdjacentActivity(View)

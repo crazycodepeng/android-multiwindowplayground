@@ -16,17 +16,20 @@
 
 package com.android.multiwindowplayground.activities;
 
-import com.android.multiwindowplayground.R;
-
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
+
+import com.android.multiwindowplayground.R;
 
 /**
  * This activity handles configuration changes itself. The list of configuration changes that are
  * supported is defined in its AndroidManifest definition. Each configuration change triggers a
  * call to {@link #onConfigurationChanged(Configuration)}, which is logged in the {@link
  * LoggingActivity}.
+ *
+ * 此活动本身处理配置更改。 支持的配置更改列表在其AndroidManifest定义中定义。
+ * 每个配置更改都会触发对{@link #onConfigurationChanged（Configuration）}的调用，该登录位于{@link LoggingActivity}中。
  *
  * @see com.android.multiwindowplayground.MainActivity#onStartCustomConfigurationActivity(View)
  */

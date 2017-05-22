@@ -31,6 +31,8 @@ import android.widget.ScrollView;
 /**
  * Simple fraggment which contains a LogView and uses is to output log data it receives
  * through the LogNode interface.
+ *
+ * 包含LogView的简单Fragment用于输出通过LogNode接口接收的日志数据。
  */
 public class LogFragment extends Fragment {
 

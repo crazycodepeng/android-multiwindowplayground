@@ -16,13 +16,14 @@
 
 package com.android.multiwindowplayground.activities;
 
-import com.android.multiwindowplayground.R;
-
 import android.os.Bundle;
 import android.view.View;
 
+import com.android.multiwindowplayground.R;
+
 /**
  * This Activity has a minimum size defined in the AndroidManifeset.
+ * 此活动具有在AndroidManifeset中定义的最小大小
  *
  * @see com.android.multiwindowplayground.MainActivity#onStartMinimumSizeActivity(View)
  */

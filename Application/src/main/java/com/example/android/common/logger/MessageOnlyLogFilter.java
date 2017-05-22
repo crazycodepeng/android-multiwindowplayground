@@ -20,6 +20,10 @@ package com.example.android.common.logger;
  * Useful for situations like on-screen log output where you don't want a lot of metadata
  * displayed,
  * just easy-to-read message updates as they're happening.
+ *
+ * 简单的{@link LogNode}过滤器，除去消息以外的所有内容。
+ *
+ * 适用于屏幕日志输出的情况，您不希望显示大量的元数据，只需轻松阅读消息更新即可。
  */
 public class MessageOnlyLogFilter implements LogNode {
 

@@ -16,15 +16,17 @@
 
 package com.android.multiwindowplayground.activities;
 
-import com.android.multiwindowplayground.R;
-
 import android.os.Bundle;
 import android.view.View;
+
+import com.android.multiwindowplayground.R;
 
 /**
  * This activity is the most basic, simeple use case and is to be launched without any special
  * flags
  * or settings.
+ *
+ * 这个活动是最基本的，简单的用例，是没有任何特殊标志或设置的情况下启动的。
  *
  * @see com.android.multiwindowplayground.MainActivity#onStartBasicActivity(View)
  */

@@ -23,6 +23,13 @@ package com.example.android.common.logger;
  * You could, for instance, write a "ToHtmlLoggerNode" that just converted all the log data
  * it received to HTML and sent it along to the next node in the chain, without printing it
  * anywhere.
+ *
+ * 用于可以输出到一个或多个目标的记录系统的基本界面。
+ *
+ * 请注意，除了将以某种格式输出这些日志的类之外，还可以通过过滤器实现此接口，并将其插入到链中，
+ * 以便没有目标进一步向下查看某些数据，或查看受控的数据形式。
+ *
+ * 例如，您可以编写一个“ToHtmlLoggerNode”，它将其接收的所有日志数据转换为HTML，并将其发送到链中的下一个节点，而无需在任何地方打印。
  */
 public interface LogNode {
 

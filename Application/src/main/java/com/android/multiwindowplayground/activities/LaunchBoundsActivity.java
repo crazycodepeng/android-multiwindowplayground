@@ -16,14 +16,16 @@
 
 package com.android.multiwindowplayground.activities;
 
-import com.android.multiwindowplayground.R;
-
 import android.os.Bundle;
 import android.view.View;
+
+import com.android.multiwindowplayground.R;
 
 /**
  * In free-form mode, this activity is to be launched within a defined bounds on screen.
  * This property is set as part of the Intent that starts this activity.
+ *
+ *在自由格式模式下，此活动将在屏幕上定义的界限内启动。 此属性设置为启动此活动的Intent的一部分。
  *
  * @see com.android.multiwindowplayground.MainActivity#onStartLaunchBoundsActivity(View)
  */
