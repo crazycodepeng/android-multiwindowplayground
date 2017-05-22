@@ -22,8 +22,14 @@ to be displayed at the same time.
 
 Android N引入了新的API来支持同时显示多个activity。
 
+---
+
+Activities that are started within the same task stack inherit their multiwindow properties from the activity that fired off the intent. The following features are available when an activity has been launched into a new task stack.
+
 在同一个任务堆栈内启动的activity将从触发意图的activity继承其多窗口属性。
 当活动已启动到新的任务堆栈中时，以下功能可用。
+
+---
 
 An activity can be set as not resizable through the
 `android:resizableActivity` property in the AndroidManifest. All
@@ -32,12 +38,16 @@ applications targeting Android N or above are resizable by default.
 可以通过AndroidManifest中的“android：resizableActivity”属性将activity设置为不可调整大小。
 默认情况下，所有针对Android N或更高版本的应用都可以调整大小。
 
+---
+
 In split-screen mode, an activity can be started adjacent to the
 launching activity by setting the
 `Intent.FLAG_ACTIVITY_LAUNCH_TO_ADJACENT` flag in its intent.
 
 在分屏模式下，可以通过在其(A)意图中设置“Intent.FLAG_ACTIVITY_LAUNCH_TO_ADJACENT”
 标志，来启动与avtivity A 相邻的activity B。
+
+---
 
 Sometimes activities may choose to handle configuration changes
 themselves (for example for games or OpenGL-based applications). In this
@@ -52,12 +62,16 @@ Activity. See [Handling Runtime Changes][1].
 `android:configChanges=screenSize|smallestScreenSize|screenLayout|orientation`
 可以启用Activity的多窗口，使用期间可能发生的所有配置更改的回调。 请参阅[处理运行时更改][1]。
 
+---
+
 In freeform mode (where applications can be freely resized), activities
 can be started within a certain area of the screen using the
 `ActivityOptions#setLaunchBounds` call.
 
 在自由格式模式（应用程序可以自由调整大小，需要root权限）中，
 可以使用`ActivityOptions＃setLaunchBounds`调用在屏幕的某个区域内启动activity。
+
+---
 
 Alternatively, the preferred and minimum sizes can be set in a new
 `layout` property in the AndroidManifest.
